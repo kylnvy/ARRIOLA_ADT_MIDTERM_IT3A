@@ -440,8 +440,35 @@
 				"disableBodyPruning": true
 			},
 			"request": {
-				"method": "GET",
-				"header": []
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "N2Q2MmUzZDQtYTM2Yy00OTk5LTg3OWQtY2Q5OTdmODQ4YWY1NWY3ZTU4YWQtYTM2_PS65_126a783f-7d69-4596-9bc7-75c91eb49803",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://webexapis.com/v1/meetings/20a63bca27374983a2ce14df3ead4ffe",
+					"protocol": "https",
+					"host": [
+						"webexapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"meetings",
+						"20a63bca27374983a2ce14df3ead4ffe"
+					]
+				}
 			},
 			"response": []
 		}
