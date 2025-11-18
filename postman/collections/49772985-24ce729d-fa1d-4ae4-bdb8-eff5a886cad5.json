@@ -1,0 +1,473 @@
+{
+	"info": {
+		"_postman_id": "49772985-24ce729d-fa1d-4ae4-bdb8-eff5a886cad5",
+		"name": "SemiFinal_Arriola",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "New Request",
+			"id": "49772985-06089dc7-e803-45a7-863b-bd3b82f2b743",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseURL}}/v1/rooms",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-7062f19a-d3b7-4de4-9556-d7e094f0ae88",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n \"title\":\"SemiFinal Room - Arriola, Kyla Joy\"\r\n\r\n}\r\n  ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/rooms",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"rooms"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-f3c513fa-5b09-43f5-a811-c41a78726482",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\": \"Updated SemiFinal Room - Arriola, Kyla Joy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/rooms/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"rooms",
+						"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-1a76330d-c481-416e-bb3f-8b77a2d634d4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roomId\": \"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm\",\r\n    \"text\": \"This is my SemFinal message - Arriola, Kyla Joy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/messages",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"messages"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-87981ee6-43ae-4880-bfb8-af47c16ffdb0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roomId\": \"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm\",\r\n    \"text\": \"This is my SemFinal message - Arriola, Kyla Joy\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/messages?roomId=Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"messages"
+					],
+					"query": [
+						{
+							"key": "roomId",
+							"value": "Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm",
+							"type": "text"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-3899533c-cba1-4001-82d8-f2fd8bb294a6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roomId\": \"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm\",\r\n    \"text\": \"This is my SemFinal message - Arriola, Kyla Joy\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/messages/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FU1NBR0UvYWEzMTAyMjAtYzQ3ZC0xMWYwLWEyMTItMzc2ZjBmYWY0MGVj",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"messages",
+						"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FU1NBR0UvYWEzMTAyMjAtYzQ3ZC0xMWYwLWEyMTItMzc2ZjBmYWY0MGVj"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-465f5074-2538-4e04-8a41-9a98fdb9f235",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"roomId\":\"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm\",\r\n    \"personEmail\": \"kylabiancafrias@gmail.com\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/memberships",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"memberships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-2fdbd054-9b10-41d8-b47b-9c59cf8df485",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/memberships/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FTUJFUlNISVAvMzBjYzc0YmYtNTI3NC00MThjLWFkYjUtNDdjMjk4MTNlMGE3OmVkOWUyYWMwLWM0N2MtMTFmMC04YzA3LTM5Y2Y0ZWM0ZDUyZg",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"memberships",
+						"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL01FTUJFUlNISVAvMzBjYzc0YmYtNTI3NC00MThjLWFkYjUtNDdjMjk4MTNlMGE3OmVkOWUyYWMwLWM0N2MtMTFmMC04YzA3LTM5Y2Y0ZWM0ZDUyZg"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-f4a3d598-df68-4bb4-8ad7-b2cecf69d304",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"SemiFinal Meeting -Arriola, Kyla Joy\",\r\n    \"start\":\"2025-11-20T10:00:00Z\",\r\n    \"end\":\"2025-11-20T11:00:00Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/meetings",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"meetings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-ee62adc1-9940-4367-9fcc-8f6c2129854a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"Updated SemiFinal Meeting -Arriola, Kyla Joy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/meetings/20a63bca27374983a2ce14df3ead4ffe",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"meetings",
+						"20a63bca27374983a2ce14df3ead4ffe"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-577e35ab-7787-457f-af80-494918e48957",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/meetings?meetingInvitees?meetingId=20a63bca27374983a2ce14df3ead4ffe",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"meetings"
+					],
+					"query": [
+						{
+							"key": "meetingInvitees?meetingId",
+							"value": "20a63bca27374983a2ce14df3ead4ffe"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-1ed17d1d-f8fc-4fa1-9c41-7cd96eeb9926",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"title\":\"SemiFinal Meeting -Arriola, Kyla Joy\",\r\n    \"start\":\"2025-11-20T10:00:00Z\",\r\n    \"end\":\"2025-11-20T11:00:00Z\"\r\n}"
+				},
+				"url": {
+					"raw": "{{baseURL}}/v1/recordings",
+					"host": [
+						"{{baseURL}}"
+					],
+					"path": [
+						"v1",
+						"recordings"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-326cc051-e186-4738-9665-ecce3bf48d45",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "ZmY5ODRhNTEtNDI5ZC00ODY3LWJkNzktZjkyMWQzZDAwNGMyMzViNjhiM2MtMTAy_P0A1_f55cb786-0d01-4c86-8828-f4136ff0df19",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "https://webexapis.com/v1/roles",
+					"protocol": "https",
+					"host": [
+						"webexapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"id": "49772985-88d2b345-d122-4943-be40-27571039c2f0",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "N2Q2MmUzZDQtYTM2Yy00OTk5LTg3OWQtY2Q5OTdmODQ4YWY1NWY3ZTU4YWQtYTM2_PS65_126a783f-7d69-4596-9bc7-75c91eb49803",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://webexapis.com/v1/rooms/Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm",
+					"protocol": "https",
+					"host": [
+						"webexapis",
+						"com"
+					],
+					"path": [
+						"v1",
+						"rooms",
+						"Y2lzY29zcGFyazovL3VybjpURUFNOnVzLXdlc3QtMl9yL1JPT00vZWQ5ZTJhYzAtYzQ3Yy0xMWYwLThjMDctMzljZjRlYzRkNTJm"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "MGZiYjFkNGQtMzJjZC00YTU2LWE2MDYtYTNiYjljZDY0MDcyYjdjOTY3Y2UtZTE5_PS65_126a783f-7d69-4596-9bc7-75c91eb49803",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "c1685306-f2d5-4ba8-a7ae-9f25cbdd6e54",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "d34fe5ae-53ca-4ce8-88b8-b8e525507154",
+				"type": "text/javascript",
+				"packages": {},
+				"requests": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
